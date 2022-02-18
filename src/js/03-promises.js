@@ -19,7 +19,7 @@ function onFormSubmit(event) {
 
 function makeCicle(delay, step, amount) {
  
-  for (let i = 0; i < amount; i += 1) {
+  for (let i = 1; i <= amount; i += 1) {
     const position = i;
     
     const p = createPromise(position, delay)

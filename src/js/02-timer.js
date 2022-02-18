@@ -56,6 +56,9 @@ const timer = {
         }
         this.intervalId = setInterval(() => {
             this.isActive = true;
+            refs.startBtn.disabled = true;
+            refs.dataTime.disabled = true;
+            
             const currentTime = Date.now();
             const deltaTime = selectedDate - currentTime;
            
